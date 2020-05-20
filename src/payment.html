@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/svg">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <input
+        type="checkbox"
+        id="toggle"
+        class="nav__toggler"
+        >
+        <label for="toggle" class="menu-hamb">
+          <span class="menu__span"></span>
+        </label>
+        <div class="header__nav-scroll scroll">
+          <div class="scroll__wrap">
+            <div class="scroll__stick">
+              <span class="scroll__three-stick"></span>
+            </div>
+            <nav>
+              <ul class="scroll__list">
+                <li class="scroll__item">
+                  <a href="index.html#shop" class="scroll__link">
+                    Shop
+                  </a>
+                </li>
+                <li class="scroll__item">
+                  <a href="#" class="scroll__link">
+                    Contact
+                  </a>
+                </li>
+                <li class="scroll__item">
+                  <a href="#" class="scroll__link">
+                    About
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      <div class="header__wrap">
+        <div class="header__logo">
+          <a href="index.html#header" class="header__logo--link">
+            <img
+              src="images/logo.svg"
+              alt="Logo page"
+              width="50"
+              height="50"
+              class="header__logo--img"
+            >
+            <p class="header__text">
+              witch of mountain winds
+            </p>
+          </a>
+        </div>
+        <div class="header__nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html#shop" class="nav__link">
+                  Shop
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#contact" class="nav__link">
+                  Contact
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#about" class="nav__link">
+                  About
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__market">
+          <a href="product.html">
+            <img
+              src="images/market.svg"
+              alt="Image market"
+              class="header__market--img"
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="checkout">
+      <div class="checkout__wrap">
+        <div class="checkout__container">
+          <div class="checkout__title">
+            <h1 class="checkout__title-text">
+              Checkout
+            </h1>
+          </div>
+          <nav class="checkout__nav">
+            <ul class="checkout__list">
+              <li class="checkout__item checkout--no-active">
+                Shipping
+              </li>
+              <li class="checkout__item checkout--active">
+                payment
+              </li>
+              <li class="checkout__item">
+                confirmation
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="checkout__title--mobile">
+          payment
+        </p>
+        <div class="checkout__choose choose">
+          <div class="choose__title">
+            <p class="choose__title-text">
+              Choose payment option
+            </p>
+          </div>
+          <div class="choose__wrap">
+            <div class="choose__container">
+              <div class="choose__card">
+                <img
+                  src="images/payment/1.svg"
+                  alt="Choose card"
+                  class="choose__img"
+                >
+                <p class="choose__desc">
+                  Credit card
+                </p>
+
+              </div>
+              <div class="choose__card">
+                <img
+                src="images/payment/2.svg"
+                alt="Choose card"
+                class="choose__img"
+                >
+                <p class="choose__desc">
+                  Payment on delivery
+                </p>
+              </div>
+              <form
+                action="confirm.html"
+                class="choose__form"
+                method="GET"
+              >
+                <input
+                  type="radio"
+                  id="card"
+                  name="card"
+                  class="choose__radio-card choose__radio"
+                  required
+                >
+                <label for="card" class="choose-card">
+                </label>
+                <input
+                  type="radio"
+                  id="dil"
+                  name="card"
+                  class="choose__radio-dil choose__radio"
+                  required
+                >
+                <label for="dil" class="choose-dil"></label>
+                <a href="google.com">
+                  <button class="contact__button choose--button">
+                    next
+                  </button>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer footer__product">
+      <div class="footer__wrap">
+        <div class="footer__container">
+          <div class="footer__wrapper">
+            <div class="footer__links">
+              <nav class="footer__nav nav-footer">
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__item">
+                    <a href="index.html#shop" class="nav-footer__link">
+                      Shop
+                    </a>
+                  </li>
+                  <li class="nav-footer__item">
+                    <a href="index.html#contact" class="nav-footer__link">
+                      Contact
+                    </a>
+                  </li>
+                  <li class="nav-footer__item">
+                    <a href="index.html#about" class="nav-footer__link">
+                      About
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__soc--mobile">
+                <a href="https://www.facebook.com/"
+                  class="footer__soc-link"
+                >
+                  <img
+                    src="images/footer/1.svg"
+                    alt="Facebook"
+                    class="footer__img"
+                  >
+                </a>
+                <a
+                  href="https://www.instagram.com/?hl=ru"
+                  class="footer__soc-link"
+                >
+                  <img
+                    src="images/footer/2.svg"
+                    alt="Instagram"
+                    class="footer__img"
+                  >
+                </a>
+              </div>
+              <p class="footer__rights footer__rights--se-mobile">
+                <span class="footer__copyright">
+                  Copyright &copy;
+                </span>
+                2019 witch of mountain winds
+              </p>
+            </div>
+            <div class="footer__info">
+              <a
+                href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4021702,30.39261,11z/data=!3m1!4b1!4m13!1m7!3m6!1s0x40d1d9c154700e8f:0x1068488f64010!2z0KPQutGA0LDQuNC90LA!3b1!8m2!3d48.379433!4d31.1655799!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4505091!4d30.5255127"
+                class="footer__info-link"
+              >
+                Ukraine
+              </a>
+              <a href="mailto:someone@yoursite.com" class="footer__info-link">
+                support.mountain@gmail.com
+              </a>
+              <a href="tel:+380934476839" class="footer__info-link">
+                +380934476839
+              </a>
+              <p class="footer__info-link">
+                Support is available Monday - Friday 9am-6pm
+              </p>
+              <div class="footer__soc">
+                <a href="https://www.facebook.com/"
+                  class="footer__soc-link"
+                >
+                  <img
+                    src="images/footer/1.svg"
+                    alt="Facebook"
+                    class="footer__img"
+                  >
+                </a>
+                <a
+                  href="https://www.instagram.com/?hl=ru"
+                  class="footer__soc-link"
+                >
+                  <img
+                    src="images/footer/2.svg"
+                    alt="Instagram"
+                    class="footer__img"
+                  >
+                </a>
+              </div>
+              <p class="footer__rights footer--se-mobile">
+                &copy; 2019 witch of mountain <br> winds
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

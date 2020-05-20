@@ -1,0 +1,63 @@
+.powder {
+  position: relative;
+  @include desktopWidth;
+  &__wrap {
+    margin-top: 200px;
+    padding: 0 50px 0 150px;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-column-gap: 80px;
+    grid-template-rows: 397px;
+  }
+  &__title {
+    margin: 66px 0 139px;
+    font-size: 36px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $c-textGreen;
+  }
+  &__quote {
+    display: grid;
+    grid-template-columns: 296px 382px;
+    grid-column-gap: 22px;
+    grid-template-rows: 397px;
+  }
+  &__desc {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    padding: 33px 0 0;
+  }
+  &__name {
+    text-align: right;
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    font-size: $fz16;
+    color: $c-text333;
+    margin-bottom: 52px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #333;
+      right: -98px;
+      top: 8px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 76px;
+      height: 1px;
+      background: #333;
+      right: -94px;
+      top: 10px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.product {
+  @include desktopWidth;
+  &__wrap {
+    margin-top: 52px;
+    padding: 0 150px 110px 50px;
+  }
+  &__container {
+    height: 468px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 500px;
+    height: 468px;
+    overflow: hidden;
+    &--hover {
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__text {
+    width: 480px;
+  }
+  &__title {
+    color: $c-text333;
+    font-size: $fz24;
+  }
+  &__price {
+    color: $c-textGreen;
+    font-size: $fz18;
+    margin: 25px 0;
+  }
+  &__weight {
+    color: $c-text333;
+    font-size: $fz18;
+    margin-bottom: 35px;
+  }
+  &__description {
+    color: $c-textGreen;
+  }
+  &__ing {
+    font-size: $fz16;
+    margin-bottom: 37px;
+    width: 360px;
+    line-height: 130%;
+  }
+  &__button {
+    margin-top: 84px;
+  }
+}
+
+.footer__product {
+  margin-top: 200px;
+}

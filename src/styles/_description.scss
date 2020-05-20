@@ -1,0 +1,40 @@
+.description {
+  @include desktopWidth;
+  &__wrap {
+    display: flex;
+    padding: 100px 250px 100px 150px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 530px;
+      height: 1px;
+      background: rgba(52, 79,16, 0.5);
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 630px;
+      height: 1px;
+      background: rgba(52, 79,16, 0.5);
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__text {
+    width: 380px;
+    color: $c-text333;
+    font-size: $fz16;
+  }
+  &__title {
+    margin-left: 120px;
+    &--text {
+      color: $c-textGreen;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 23px;
+    }
+  }
+}

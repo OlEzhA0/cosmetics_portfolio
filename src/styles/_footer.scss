@@ -1,0 +1,79 @@
+.footer {
+  background-color: rgba(52, 79, 16, 0.5);
+  &__wrap {
+    height: 320px;
+    @include desktopWidth;
+  }
+  &__container {
+    padding: 60px 50px 66px 51px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links {
+    align-content: space-between;
+    height: 194px;
+    width: 401px;
+    position: relative;
+  }
+  &__rights {
+    position: absolute;
+    bottom: 0;
+    color: $c-oysterWhite;
+    font-size: $fz18;
+    text-transform: uppercase;
+  }
+  &__copyright {
+    color: $c-oysterWhite;
+    font-size: $fz18;
+    text-transform: capitalize;
+  }
+  &__info {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-link {
+    margin-bottom: 20px;
+    color: $c-oysterWhite;
+    font-size: $fz18;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  &__img {
+    margin-right: 14px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__soc-link {
+    text-decoration: none;
+  }
+}
+
+.nav-footer {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    list-style-type: none;
+    margin-right: 20px;
+    @include hoverLink(#e4dfd3, nav-footer__link);
+
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-oysterWhite;
+    font-size: $fz18;
+    padding: 10px;
+
+  }
+}

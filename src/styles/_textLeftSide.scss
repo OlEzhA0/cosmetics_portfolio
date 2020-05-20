@@ -1,0 +1,19 @@
+.about__left-side {
+  @include leftBar(87px, -37px);
+}
+
+.shop__left-side {
+  @include leftBar(548px, 38px);
+}
+
+.creators__left-side {
+  @include leftBar (202.5px, -16.5px);
+}
+
+.powder__left-side {
+  @include leftBar (33px, 17px);
+}
+
+.contact__left-side {
+  @include leftBar (348.5px, 42.5px);
+}

@@ -1,0 +1,54 @@
+.about {
+  @include desktopWidth;
+  position: relative;
+
+  &__wrap {
+    margin-top: 200px;
+    padding-left: 150px;
+    display: flex;
+    height: 529px;
+    position: relative;
+  }
+  &__text {
+    width: 380px;
+    height: 483px;
+    position: relative;
+    top: 46px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $c-textGreen;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+  &__desc {
+    color: $c-text333;
+    font-size: 17.6px;
+    margin-bottom: 40px;
+  }
+  &__large-img {
+    margin: 0 20px 0 100px;
+    width: 500px;
+    height: 529px;
+    overflow: hidden;
+  }
+  &__two-img {
+    height: 440px;
+  }
+  &__first-img,
+  &__two-img {
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__small-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 130px;
+    height: 440px;
+    overflow: hidden;
+  }
+}

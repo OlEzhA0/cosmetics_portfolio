@@ -1,0 +1,26 @@
+.brand {
+  &__link {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: $fz16;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    background: #333;
+    transition: all 0.3s 0.1s;
+    &:hover {
+      background: $c-oysterWhite;
+      font-size: 17px;
+      color: $c-text333;
+      border: 2px solid #333;
+      box-sizing: border-box;
+    }
+  }
+}

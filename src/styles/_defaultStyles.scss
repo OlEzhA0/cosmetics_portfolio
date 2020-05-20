@@ -1,0 +1,44 @@
+body {
+  background: $c-background;
+  font-family: "Public Sans", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+textarea,
+input,
+button,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track-piece {
+  box-shadow: rgba($color: #e4dfd3, $alpha: 0.5);
+
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

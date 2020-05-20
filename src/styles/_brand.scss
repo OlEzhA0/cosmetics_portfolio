@@ -1,0 +1,21 @@
+.brand {
+  @include desktopWidth;
+  &__wrap {
+    padding: 0 53px 0 150px;
+    margin: 81px auto 200px;
+    display: grid;
+    grid-template-columns: 480px 577px;
+    grid-template-rows: 451px;
+    grid-column-gap: 20px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 60px;
+    color: $c-text333;
+  }
+  &__sale {
+    margin-bottom: 52px;
+    font-size: 22px;
+    color: $c-text333;
+  }
+}

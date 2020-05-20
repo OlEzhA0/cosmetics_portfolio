@@ -1,0 +1,42 @@
+.advantage {
+  @include desktopWidth;
+  &__wrap {
+    margin-top: 250px;
+    padding: 0 50px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: 139px;
+    grid-column-gap: 20px;
+  }
+  &__card {
+    justify-self: center;
+    width: 100%;
+  }
+  &__img {
+    margin: 0 auto;
+    display: block;
+  }
+  &__text {
+    font-size: $fz14;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000;
+  }
+}
+
+.advantage__card:first-child .advantage__text {
+  margin-top: 44px;
+}
+
+.advantage__card:nth-child(2) .advantage__text {
+  margin-top: 19px;
+}
+
+.advantage__card:nth-child(3) .advantage__text {
+  margin-top: 24px;
+}

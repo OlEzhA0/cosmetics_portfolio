@@ -1,0 +1,38 @@
+.creators {
+  @include desktopWidth;
+  position: relative;
+  &__wrap {
+    padding: 0 50px 0 150px;
+    margin-top: 200px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 669px;
+
+  }
+  &__text {
+    width: 380px;
+    position: relative;
+    top: 28px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $c-textGreen;
+    font-size: 39px;
+  }
+  &__desc {
+    margin-bottom: 35px;
+    color: $c-text333;
+    font-size: 17px;
+  }
+  &__learn {
+    margin-top: 20px;
+  }
+  &__button {
+    margin-top: 63px;
+  }
+}

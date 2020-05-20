@@ -1,0 +1,52 @@
+.header {
+  @include desktopWidth;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px 0;
+    position: relative;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo--link {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+  }
+  &__text {
+    margin-left: 12px;
+
+    text-transform: uppercase;
+
+    color: $c-textGreen;
+    font-size: $fz14;
+    letter-spacing: 0.05em;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin: 0 10px;
+
+    list-style-type: none;
+    @include hoverLink(#344f10, nav__link);
+
+  }
+  &__link {
+    text-decoration: none;
+    padding: 10px;
+
+    font-size: $fz18;
+    color: $c-textGreen;
+
+  }
+}

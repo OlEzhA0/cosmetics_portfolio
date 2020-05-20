@@ -1,0 +1,113 @@
+.shop {
+  @include desktopWidth;
+  position: relative;
+  &__wrap {
+    margin-top: 200px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $c-textGreen;
+  }
+  &__nav {
+    margin-bottom: 80px;
+    &-list {
+      display: flex;
+    }
+    &-item {
+      list-style-type: none;
+      margin-right: 25px;
+    }
+    &-link {
+      text-decoration: none;
+      color: #828282;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: $fz18;
+      &:hover {
+        color: $c-text333;
+      }
+    }
+    &--active {
+      color: $c-text333;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 54px;
+        height: 2px;
+        left: 0;
+        bottom: -20px;
+        background: #333;
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    margin-bottom: 45px;
+  }
+  &__card {
+    margin-right: 20px;
+  }
+  &__img {
+    margin-bottom: 20px;
+    width: 380px;
+    height: 500px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  &__name {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $c-text333;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__price {
+    font-size: $fz18;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $c-text333;
+  }
+}
+
+.shop__card:last-child .shop__img {
+  width: 330px;
+}
+
+.arrow {
+  &__right,
+  &__left {
+    margin-bottom: 30px;
+  }
+  &__right:hover {
+    background-image: url("../images/shop/nextHover.svg");
+    cursor: pointer;
+  }
+  &__left:hover {
+    background-image: url("../images/shop/backHover.svg");
+    cursor: pointer;
+  }
+}
+
+.--shop__button {
+  margin: 0 auto;
+}

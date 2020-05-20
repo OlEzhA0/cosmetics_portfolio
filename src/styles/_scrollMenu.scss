@@ -1,0 +1,127 @@
+.scroll {
+  width: 100vw;
+  height: 100vh;
+  background-color: $c-text333;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: -5000px;
+  transition: all 0.5s;
+  &__wrap {
+    padding: 143px 0 0;
+    position: relative;
+  }
+  &__stick {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+  }
+  &__item {
+    margin-bottom: 61px;
+  }
+  &__link {
+    color: $c-oysterWhite;
+    font-size: $fz18;
+    text-decoration: none;
+  }
+  &__three-stick {
+    width: 714px;
+    height: 1px;
+    background-color: #828282;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    &::after {
+      position: absolute;
+      width: 714px;
+      height: 1px;
+      background-color: #828282;
+      content: "";
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -50px;
+      top: 83px;
+    }
+    &::before {
+      position: absolute;
+      width: 714px;
+      height: 1px;
+      background-color: #828282;
+      content: "";
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -50px;
+      top: 166px;
+    }
+  }
+}
+
+.nav__toggler:checked ~ .scroll {
+  top: 0;
+}
+
+.menu__span,
+.menu__span::before,
+.menu__span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: $c-textGreen;
+  transition-duration: 0.3s;
+}
+
+.menu-hamb {
+  position: absolute;
+  left: 50%;
+  transform: translate(-892%);
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  top: 20px;
+}
+
+.menu__span {
+  top: 50%;
+  right: 25%;
+  display: block;
+  transform: translate(0, -50%);
+  z-index: 1;
+  &::after {
+    content: "";
+    top: 8px;
+  }
+  &::before {
+    content: "";
+    top: -8px;
+  }
+}
+
+.nav__toggler {
+  display: none;
+}
+
+.nav__toggler:checked ~ .menu-hamb > .menu__span,
+.nav__toggler:checked ~ .menu-hamb > .menu__span::after,
+.nav__toggler:checked ~ .menu-hamb > .menu__span::before {
+  background-color: $c-oysterWhite;
+}
+
+.nav__toggler:checked ~ .menu-hamb > .menu__span {
+  transform: rotate(45deg);
+}
+
+.nav__toggler:checked ~ .menu-hamb > .menu__span::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.nav__toggler:checked ~ .menu-hamb > .menu__span::before {
+  transform: rotate(0);
+  top: 0;
+}

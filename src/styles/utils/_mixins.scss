@@ -1,0 +1,58 @@
+@mixin leftBar($top, $left) {
+  color: rgba(52, 79, 16, 0.5);
+  text-transform: uppercase;
+  font-size: $fz14;
+  position: absolute;
+  left: #{$left};
+  top: #{$top};
+  transform: rotate(-90deg);
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: $c-textGreen;
+    left: -110px;
+    bottom: 8px;
+  }
+}
+
+@mixin desktopWidth {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin mobileWidth {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin seWidth {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin hoverLink($color, $path) {
+  position: relative;
+  transition: all 0.3s;
+  &:hover .#{$path}::after {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #{$color};
+    animation: animHover 0.3s;
+    opacity: 1;
+  }
+}
+
+@keyframes animHover {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
